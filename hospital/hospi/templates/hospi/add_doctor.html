@@ -1,0 +1,9 @@
+<h1>Add Doctor</h1>
+<form method="post">
+    {% csrf_token %}
+    <label>Name: <input type="text" name="name"></label><br>
+    <label>Specialization: <input type="text" name="specialization"></label><br>
+    <label>Contact Number: <input type="text" name="contact_number"></label><br>
+    <label>Email: <input type="email" name="email"></label><br>
+    <button type="submit">Add Doctor</button>
+</form>

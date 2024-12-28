@@ -1,0 +1,11 @@
+<h1>{{ doctor.name }}</h1>
+<p>Specialization: {{ doctor.specialization }}</p>
+<p>Contact: {{ doctor.contact_number }}</p>
+<p>Email: {{ doctor.email }}</p>
+<h2>Patients</h2>
+<a href="{% url 'add_patient' doctor.id %}">Add Patient</a>
+<ul>
+    {% for patient in patients %}
+    <li>{{ patient.name }} - {{ patient.age }} years</li>
+    {% endfor %}
+</ul>
